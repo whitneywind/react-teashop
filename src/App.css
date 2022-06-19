@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none !important;
+  color: var(--font-color) !important;
+}
+
+a:hover {
+  color:rgb(186, 187, 184) !important;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -114,15 +123,6 @@ header {
 
 #lang-btn {
   font-size: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--font-color);
-}
-
-a:hover {
-  color:rgb(186, 187, 184)
 }
 
 .card-container {
