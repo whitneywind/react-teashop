@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+// import { Button } from 'reactstrap';
+import Homepage from './Homepage';
+import { Routes, Route } from 'react-router-dom';
+import HomepageKor from './HomepageKor';
+import DirectionsEng from './components/DirectionsEng';
+import DirectionsKor from './components/DirectionsKor';
+import LayoutKor from './LayoutKor';
+import Layout from './Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Homepage />} />
+            <Route path='/directions' element={<DirectionsEng />} />
+          </Route>
+          <Route path='/kr' element={<LayoutKor />} >
+            <Route index element={<HomepageKor/>} />
+            <Route path='/kr/directions' element={<DirectionsKor />} />
+          </Route>
+      </Routes>     
+    </>
   );
 }
 
