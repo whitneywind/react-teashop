@@ -103,21 +103,24 @@ header {
   min-width: 300px;
 }
 
+.guests-number-div {
+  font-size: 2rem;
+}
+
+.minus, .plus {
+  cursor: pointer;
+  padding: auto 1rem;
+}
+
+.minus:hover, .plus:hover {
+  transform: scale(1.4);
+}
+
 #top-title h1{
   align-self: center;
   font-size: 2rem;
   color: var(--font-color);
   flex-wrap: nowrap;
-}
-
-#xs-nav-list {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: no-wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 200px;
-  padding-left: 7px;
 }
 
 #lang-btn {

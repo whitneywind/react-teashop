@@ -7,6 +7,8 @@ import DirectionsEng from './components/DirectionsEng';
 import DirectionsKor from './components/DirectionsKor';
 import LayoutKor from './LayoutKor';
 import Layout from './Layout';
+import Reservation from './components/Reservation';
+import ReservationKor from './components/ReservationKor';
 
 function App() {
   return (
@@ -15,10 +17,12 @@ function App() {
           <Route path='/' element={<Layout />}>
             <Route index element={<Homepage />} />
             <Route path='/directions' element={<DirectionsEng />} />
+            <Route path='/reservation' element={<Reservation />} />
           </Route>
           <Route path='/kr' element={<LayoutKor />} >
             <Route index element={<HomepageKor/>} />
             <Route path='/kr/directions' element={<DirectionsKor />} />
+            <Route path='/kr/reservation' element={<ReservationKor />} />
           </Route>
       </Routes>     
     </>

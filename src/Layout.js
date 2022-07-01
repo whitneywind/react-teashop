@@ -31,7 +31,7 @@ const Layout = () => {
                         <ul id="nav-list-1">
                             <Link to='/'>home</Link>
                             <Link to='/directions'>directions</Link>
-                            <Link to='/'>menu</Link>
+                            <Link to='/reservation'>reserve</Link>
                         </ul>
                         <p>tea info</p>
                         <ul id="nav-list-2">
@@ -48,11 +48,11 @@ const Layout = () => {
             <div className="row row-content">
                 <div id="top-title" className="d-xs-flex d-sm-none mt-2 col col-lg-10 offset-lg-1">
                     <h1>Tea Collective</h1>
-                    <ul id="xs-nav-list">
+                    <div className='d-flex justify-content-around'>
                             <Link to='/'>home</Link>
                             <Link to='/directions'>directions</Link>
-                            <Link to='/'>menu</Link>
-                        </ul>
+                            <Link to='/reservation'>reserve</Link>
+                    </div>
                 </div>
                 <div className="d-xs-none d-md-block mt-2 col col-lg-10 offset-lg-1">
                     <div className="d-flex flex-row justify-content-end">

@@ -24,7 +24,6 @@ const CarouselComponent = () => {
                 },
                 {src: carouselImg3
                 }
-
             ];
             
             // Items array length
@@ -76,7 +75,7 @@ const CarouselComponent = () => {
                             </Carousel.Item>
                         </Carousel>
                     </div> */}
-                    <div className="d-block w-70">
+                    <div className="d-md-block w-70 d-xs-none">
                         <Carousel previous={previousButton} next={nextButton} 
                             activeIndex={activeIndex}>
                             <CarouselIndicators items={items}
