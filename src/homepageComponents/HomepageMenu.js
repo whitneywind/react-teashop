@@ -24,7 +24,7 @@ const HomepageMenu = () => {
                         <img src={SenchaImg} className="card-img-top" alt="..." />
                         <div className="card-title">Sencha</div>
                         <div className="card-body">
-                            <p>Sencha brews a balance of sweetness and astringency. This classNameic tea fits any occasion.</p>
+                            <p>Sencha brews a balance of sweetness and astringency. This classic tea fits any occasion.</p>
                         </div>
                     </div>
                     <div className="card" id="hojicha">

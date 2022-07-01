@@ -1,11 +1,11 @@
-import Carousel from "./homepageComponents/Carousel";
+import CarouselComponent from "./homepageComponents/Carousel";
 import About from "./homepageComponents/About";
 import HomepageMenu from "./homepageComponents/HomepageMenu";
 
 const Homepage = () => {
     return (
       <>
-        <Carousel />
+        <CarouselComponent />
         <About />
         <HomepageMenu />
     </>

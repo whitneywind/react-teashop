@@ -20,14 +20,14 @@ return (
                         <ul id="nav-list-1">
                             <Link to='/kr'>홈</Link>
                             <Link to='/kr/directions'>길 안내</Link>
-                            <Link to='/'>메뉴</Link>
+                            <a href='/kr#matcha'>메뉴</a>
                         </ul>
                         <p>차 종류</p>
                         <ul id="nav-list-2">
-                            <li><a href="#matcha">말차</a></li>
-                            <li><a href="#sencha">센차</a></li>
-                            <li><a href="#hojicha">호지차</a></li>
-                            <li><a href="#gyokuro">교쿠로</a></li>
+                            <li><a href="/kr#matcha">말차</a></li>
+                            <li><a href="/kr#sencha">센차</a></li>
+                            <li><a href="/kr#hojicha">호지차</a></li>
+                            <li><a href="/kr#gyokuro">교쿠로</a></li>
                         </ul>
                     </div>
                 </nav>

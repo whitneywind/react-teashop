@@ -2,6 +2,17 @@ import { Link, Outlet } from 'react-router-dom';
 import logo from "./images/IMG_7844.jpg"; 
 
 const Layout = () => {
+   
+    // // toggle button text on mouseover
+    // const langBtn = document.querySelector('#lang-btn');
+    // langBtn.addEventListener('mouseover', textToggle);
+    // langBtn.addEventListener('mouseout', textToggle)
+
+    // function textToggle() {
+    //     langBtn.innerText === 'lang (eng)' ? langBtn.innerText = '한국어로' : langBtn.innerText = 'lang (eng)';
+    // }
+
+
     return (
     <div className="body-container">
         <header>
@@ -24,10 +35,10 @@ const Layout = () => {
                         </ul>
                         <p>tea info</p>
                         <ul id="nav-list-2">
-                            <li><a href="#matcha">matcha</a></li>
-                            <li><a href="#sencha">sencha</a></li>
-                            <li><a href="#hojicha">hojicha</a></li>
-                            <li><a href="#gyokuro">gyokuro</a></li>
+                            <li><a href="/#matcha">matcha</a></li>
+                            <li><a href="/#sencha">sencha</a></li>
+                            <li><a href="/#hojicha">hojicha</a></li>
+                            <li><a href="/#gyokuro">gyokuro</a></li>
                         </ul>
                     </div>
                  </nav>
