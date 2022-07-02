@@ -33,7 +33,7 @@ const Layout = () => {
                             <Link to='/directions'>directions</Link>
                             <Link to='/reservation'>reserve</Link>
                         </ul>
-                        <p>tea info</p>
+                        <p>tea menu</p>
                         <ul id="nav-list-2">
                             <li><a href="/#matcha">matcha</a></li>
                             <li><a href="/#sencha">sencha</a></li>

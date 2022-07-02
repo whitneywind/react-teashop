@@ -3,7 +3,6 @@ import { Button, Form, FromGroup, Label, Input, FormTest, FormGroup } from 'reac
 import reservationImg from '../images/reservationImg.jpg'
 
 const Reservation = () => {
-    const [name, setName] = useState("");
     const [guests, setGuest] = useState(2);
 
     const minusGuest = () => {
@@ -20,9 +19,20 @@ const Reservation = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setGuest(2);
-        setName("");
-        
+        document.querySelector('#name').value = '';
     }
+
+    const dateToday = () => {
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        if (month.length === 1) month = `0${month}`;
+        let day = date.getDate();
+        if (day.length === 1) day = `0${month}`;
+        let formattedDate = `${year}-${month}-${day}`;
+        return formattedDate;
+    }
+
     return (
         <div>
             <div className="mx-auto col-6 col-md-5 mt-5">
@@ -31,8 +41,8 @@ const Reservation = () => {
             <Form onSubmit={handleSubmit} className="col-xs-6 col-md-5 d-flex flex-column mx-auto my-5">
                 <h2 className="mx-auto font">make a reservation</h2>
                 <FormGroup>
-                    <label for="name">name: </label>
-                    <input type="text" default="name" className="form-control" />
+                    <label htmlFor="name">name: </label>
+                    <input type="text" default="name" id='name' className="form-control" required />
                 </FormGroup>
                 <FormGroup>
                     <label>number of guests:</label>
@@ -45,16 +55,16 @@ const Reservation = () => {
                     </div>
                 </FormGroup>
                 <FormGroup>
-                    <label for="date">date:</label>
-                    <input id="date" className="form-control" type="date" />
+                    <label htmlFor="date">date:</label>
+                    <input id="date" className="form-control" type="date" max="2022-08-31" min={dateToday()} defaultValue={dateToday()} required />
                 </FormGroup>
                 <FormGroup>
-                    <label for="appt-time">time: </label>
-                    <input id="appt-time" type="time" name="appt-time" className="form-control" value="13:30"></input>
+                    <label htmlFor="appt-time">time: </label>
+                    <input id="appt-time" type="time" name="appt-time" className="form-control" defaultValue="10:30" required></input>
                 </FormGroup>
-
                 <Button>reserve</Button> 
             </Form>
+            {dateToday()}
         </div>
         
     )
