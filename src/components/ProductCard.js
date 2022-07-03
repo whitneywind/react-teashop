@@ -22,14 +22,14 @@ const ProductCard = ({ name, image, desc, price }) => {
 
 
     return (
-        <div className="card" id={name}>
+    <div className="card" id={name}>
             <img src={image} className="card-img-top" alt="..." />
             <div className="card-title">{name}</div>
             <div className="card-body">
                 <p>{desc}</p>
-                <p>{price}</p>
+                <h5>${price}</h5>
             </div>
-            <button onClick={handleClick}>Add to Cart</button>
+            <button className='w-fit mx-auto' onClick={handleClick}>Add to Cart</button>
     </div>
     )
 }

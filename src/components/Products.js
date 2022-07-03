@@ -3,13 +3,19 @@ import ProductCard from "./ProductCard"
 
 const Products = () => {
     return (
+        <>
+        <div className="row row-content">
+                <div className="col col-lg-10 offset-lg-1 d-flex my-md-4">
+                    <h3 id="tea-products" className="mt-5 pt-3">Order Online</h3>
+                </div>
+            </div>
         <div className="card-container col col-lg-10 offset-lg-1 d-flex flex-wrap space-between">
-            <div className="card-container col col-lg-10 offset-lg-1 d-flex flex-wrap space-between">
                 {productData.map((data, index) => (
                     <ProductCard key={index} {...data} />
                 ))}
             </div>
-        </div>
+        </>
+       
     )
 }
 
