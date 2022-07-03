@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import logo from "./images/IMG_7844.jpg"; 
+import useProducts from './components/ProductContext';
 
 const Layout = () => {
    
@@ -11,6 +12,8 @@ const Layout = () => {
     // function textToggle() {
     //     langBtn.innerText === 'lang (eng)' ? langBtn.innerText = '한국어로' : langBtn.innerText = 'lang (eng)';
     // }
+    const { products } = useProducts();
+    const numberOfProducts = products.length; 
 
 
     return (
@@ -56,7 +59,7 @@ const Layout = () => {
                 </div>
                 <div className="d-xs-none d-md-block mt-2 col col-lg-10 offset-lg-1">
                     <div className="d-flex flex-row justify-content-end">
-                      <p>
+                        <Link to='/cart' className='btn'>cart (<b>{numberOfProducts}</b>)</Link>
                         <Link 
                             to='/kr'
                             id="lang-btn" 
@@ -68,7 +71,6 @@ const Layout = () => {
                             title="언어 바꾸기">
                                 lang (eng)
                         </Link>
-                      </p>
                     </div>
                 </div>
             </div>

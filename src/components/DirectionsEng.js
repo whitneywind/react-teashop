@@ -4,7 +4,7 @@ const DirectionsEng = () => {
             <div className="row row-content">
                 <div className="mt-2 col col-xs-12 col-lg-10 offset-lg-1">
                     <div id="map-div">
-                    <iframe id="google-map-1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12657.193075834184!2d127.04119868406984!3d37.52446568032793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e10d11250265f0e!2sTea%20Collective!5e0!3m2!1sen!2sus!4v1653507628806!5m2!1sen!2sus" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe id="google-map-1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12657.193075834184!2d127.04119868406984!3d37.52446568032793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e10d11250265f0e!2sTea%20Collective!5e0!3m2!1sen!2sus!4v1653507628806!5m2!1sen!2sus" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
