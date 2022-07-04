@@ -1,9 +1,11 @@
-const CartProductCard = ({ name, image }) => {
-
+const CartProductCard = ({ name, idName, image, price }) => {
     return (
-        <div className="card" id={name}>
-            <img src={image} className="card-img-top" alt="..." />
-            <div className="card-title">{name}</div>
+        <div className="d-flex justify-content-around mt-5">
+            <div>
+                <img src={image} id={idName} className="card-img-top w-25" alt="..." />
+                <h5 className="">{name} Tea</h5>
+            </div>
+            <h4 className="align-self-center">${price}</h4>
         </div>
     )
 }

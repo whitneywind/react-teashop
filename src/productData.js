@@ -6,24 +6,28 @@ import GyokuroImg from './images/IMG_1910.jpg';
 export const productData = [
     {
         name: "Matcha",
+        idName: "matcha",
         price: 16,
         image: MatchaImg,
         desc: "Our ceremonial matcha is ground from premium harvest leaves. A pure, rich matcha flavor unlike any other."
     },
     {
         name: "Sencha",
+        idName: "sencha",
         price: 10,
         image: SenchaImg,
         desc: "Sencha brews a balance of sweetness and astringency. This classic tea fits any occasion."
     },
     {
         name: "Hojicha",
+        idName: "hojicha",
         price: 14,
         image: HojichaImg,
         desc: "Remarkably aromatic, light-bodied, and refreshing. This hojicha blend of roasted green tea leaves and stems."
     },
     {
         name: "Gyokuro",
+        idName: "gyokuro",
         price: 10,
         image: GyokuroImg,
         desc: "Gyokuro is a green tea with a sweet umami flavor. This tea is one for slowly sipping and savoring."

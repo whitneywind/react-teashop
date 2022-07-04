@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import useProducts from './ProductContext';
 
-const ProductCard = ({ name, image, desc, price }) => {
+const ProductCard = ({ name, idName, image, desc, price }) => {
     const { products, addToCart, removeFromCart } = useProducts();
     const [inCart, setInCart] = useState(false);
 
@@ -22,14 +22,14 @@ const ProductCard = ({ name, image, desc, price }) => {
 
 
     return (
-    <div className="card" id={name}>
+    <div className="card" id={idName}>
             <img src={image} className="card-img-top" alt="..." />
             <div className="card-title">{name}</div>
             <div className="card-body">
                 <p>{desc}</p>
                 <h5>${price}</h5>
             </div>
-            <button className='w-fit mx-auto' onClick={handleClick}>Add to Cart</button>
+            <button className='w-fit mx-auto btn btn-light btn-sm btn-outline-success' onClick={handleClick}>Add to Cart</button>
     </div>
     )
 }
