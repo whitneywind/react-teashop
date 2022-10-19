@@ -25,7 +25,7 @@ const Layout = () => {
                         <a href="#">
                             <img id="logo" src={ logo } alt="logo" />
                         </a>
-                     </div>
+                    </div>
                     <a href="/">
                         <h1 id="cafe-title">Tea Collective</h1>
                     </a>

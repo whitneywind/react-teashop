@@ -1,7 +1,12 @@
 import { Link, Outlet } from 'react-router-dom';
 import logo from "./images/IMG_7844.jpg"; 
+import useProducts from './components/ProductContext';
 
 const LayoutKor = () => {
+
+    const { products } = useProducts();
+    const numberOfProducts = products.length;
+
 return (
     <div className="body-container">
         <header>
@@ -45,9 +50,8 @@ return (
                 </div>
                 <div className="d-xs-none d-md-block mt-2 col col-lg-10 offset-lg-1">
                     <div className="d-flex flex-row justify-content-end">
-                        <p>
+                            <Link to='/kr/cart' className='btn'>장바구니 (<b>{numberOfProducts}</b>)</Link>
                             <Link to='/' id="lang-btn" className="btn" type="button" data-bs-toggle="tooltip" lang="ko" data-bs-placement="bottom" title="switch to English">언어 (kor)</Link>
-                        </p>
                     </div>
                 </div>
                 <Outlet />

@@ -11,6 +11,7 @@ import Reservation from './components/Reservation';
 import ReservationKor from './components/ReservationKor';
 import { ProductProvider } from './components/ProductContext';
 import Cart from './components/Cart';
+import CartKor from './components/CartKor';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route index element={<HomepageKor/>} />
             <Route path='/kr/directions' element={<DirectionsKor />} />
             <Route path='/kr/reservation' element={<ReservationKor />} />
+            <Route path='/kr/cart' element={<CartKor />} />
           </Route>
       </Routes> 
     </ProductProvider>    

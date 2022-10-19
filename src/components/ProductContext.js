@@ -22,7 +22,7 @@ export const ProductProvider = ({ children }) => {
         const updatedCart = state.products.filter(x => x.name !== product.name);
         updatePrice(updatedCart);
         dispatch({
-            type: "REMOVE_FORM_CART",
+            type: "REMOVE_FROM_CART",
             payload: {
                 products: updatedCart
             }
