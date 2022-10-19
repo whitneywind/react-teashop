@@ -4,7 +4,7 @@ const CartProductCard = ({ name, id, idName, image, price }) => {
     const { removeFromCart } = useProducts();
 
     const handleClick = () => {
-        // find by unique id then delete . prob another prop below..
+        // find by unique id then delete 
         const product = { name, id, idName, image, price };
         removeFromCart(product);
     }

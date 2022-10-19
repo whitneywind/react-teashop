@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Form, FromGroup, Label, Input, FormTest, FormGroup } from 'reactstrap';
+import { Button, Form, FormGroup } from 'reactstrap';
 import reservationImg from '../images/reservationImg.jpg'
 
 const ReservationKor = () => {

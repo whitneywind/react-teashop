@@ -3,18 +3,8 @@ import logo from "./images/IMG_7844.jpg";
 import useProducts from './components/ProductContext';
 
 const Layout = () => {
-   
-    // // toggle button text on mouseover
-    // const langBtn = document.querySelector('#lang-btn');
-    // langBtn.addEventListener('mouseover', textToggle);
-    // langBtn.addEventListener('mouseout', textToggle)
-
-    // function textToggle() {
-    //     langBtn.innerText === 'lang (eng)' ? langBtn.innerText = '한국어로' : langBtn.innerText = 'lang (eng)';
-    // }
     const { products } = useProducts();
     const numberOfProducts = products.length; 
-
 
     return (
     <div className="body-container">
