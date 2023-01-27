@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-teashop/static/css/main.1506dd4e.css",
+    "main.js": "/react-teashop/static/js/main.c1c82193.js",
+    "static/media/IMG_7117.jpg": "/react-teashop/static/media/IMG_7117.b43d50bbcb5a93493eb9.jpg",
+    "static/media/IMG_7844.jpg": "/react-teashop/static/media/IMG_7844.2316cbe196db2f818353.jpg",
+    "static/media/IMG_7120.jpg": "/react-teashop/static/media/IMG_7120.afc7b1a4253edb7b9eb4.jpg",
+    "static/media/IMG_6762.jpg": "/react-teashop/static/media/IMG_6762.03c3ca3b3cd7624618d9.jpg",
+    "static/media/IMG_7152.jpg": "/react-teashop/static/media/IMG_7152.c425fef34b2bf6a69a9b.jpg",
+    "static/media/IMG_1910.jpg": "/react-teashop/static/media/IMG_1910.453190bb12a1620c866b.jpg",
+    "static/media/IMG_1029.jpg": "/react-teashop/static/media/IMG_1029.7304813f4a16e3f339b8.jpg",
+    "static/media/IMG_6345.jpg": "/react-teashop/static/media/IMG_6345.10cfd6456a2a5a60505c.jpg",
+    "static/media/IMG_7491.jpg": "/react-teashop/static/media/IMG_7491.39d473e48e49cb784615.jpg",
+    "static/media/naver-map.jpg": "/react-teashop/static/media/naver-map.18cefc7b95ea7bbfc19d.jpg",
+    "static/media/IMG_1007.jpg": "/react-teashop/static/media/IMG_1007.81fc70c4c65b985e1c3f.jpg",
+    "static/media/img8.jpg": "/react-teashop/static/media/img8.cc3ff8171e2fbd5e5b09.jpg",
+    "static/media/reservationImg.jpg": "/react-teashop/static/media/reservationImg.3d85d192f38eec992cae.jpg",
+    "index.html": "/react-teashop/index.html",
+    "main.1506dd4e.css.map": "/react-teashop/static/css/main.1506dd4e.css.map",
+    "main.c1c82193.js.map": "/react-teashop/static/js/main.c1c82193.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1506dd4e.css",
+    "static/js/main.c1c82193.js"
+  ]
+}
