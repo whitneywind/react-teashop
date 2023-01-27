@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1506dd4e.css",
-    "main.js": "/static/js/main.6fc42e5f.js",
+    "main.js": "/static/js/main.8d1be804.js",
     "static/media/IMG_7117.jpg": "/static/media/IMG_7117.b43d50bbcb5a93493eb9.jpg",
     "static/media/IMG_7844.jpg": "/static/media/IMG_7844.2316cbe196db2f818353.jpg",
     "static/media/IMG_7120.jpg": "/static/media/IMG_7120.afc7b1a4253edb7b9eb4.jpg",
@@ -17,10 +17,10 @@
     "static/media/reservationImg.jpg": "/static/media/reservationImg.3d85d192f38eec992cae.jpg",
     "index.html": "/index.html",
     "main.1506dd4e.css.map": "/static/css/main.1506dd4e.css.map",
-    "main.6fc42e5f.js.map": "/static/js/main.6fc42e5f.js.map"
+    "main.8d1be804.js.map": "/static/js/main.8d1be804.js.map"
   },
   "entrypoints": [
     "static/css/main.1506dd4e.css",
-    "static/js/main.6fc42e5f.js"
+    "static/js/main.8d1be804.js"
   ]
 }
